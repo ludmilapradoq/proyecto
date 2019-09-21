@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+.menu {
+    font-family: 'Muli', Arial, sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    line-height: 1em;
+    margin: 15px 40px;
+    text-transform: uppercase;
+
+}
+
+.menu li { 
+    display: inline-block;
+    list-style: outside none none; 
+    margin: 0.5em 0.6em;
+    padding: 12px 15px;
+    position: relative;
+
+}
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu li::before,
+.menu li::after {
+    transition: all 0.35s ease;
+    height: 2px;
+    width: 35%;
+    background-color: #528cb3;
+position: absolute;
+content: "";
+opacity: 0;
+}
+
+body {
+    background-color: #212121;
+}
+
+.menu li::before {
+    top: 0;
+    left: 0;
+
+}
+ .menu li::after {
+     bottom: 0;
+     right: 0;
+
+ }
+ .menu li:hover::before,
+ .menu li:hover::before,
+ .menu li:hover::after, 
+ .menu li:hover::after {
+opacity:1;
+
+ }
+ .menu li:hover::before,
+ .menu li:hover::before {
+     left: 65%;
+ }
+
+ .menu li::after,
+ .menu li::after {
+     right: 65%;
+ }
+
+ .Footer {
+    display: none;
+    background-color: #000;
+    -webkit-font-smoothing: antialiased;
+    }
